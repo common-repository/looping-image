@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*
+	Plugin Name: General Things Looping Image
+	Plugin URI: http://labs.generalthings.com
+	Description: Plugin for adding a rotating image graphic across the header of your site
+	Author: Christopher Hein
+	Version: 0.1
+	Author URI: http://generalthings.com
+*/
+
+	/* General Things Logo */
+#gt-logo a {
+  position: relative;
+  background: url('/wp-content/plugins/looping_image/images/generalthings_logo.jpg');
+  width: 200px;
+  height: 54px;
+  display: block;
+  float: right;
+	margin-top: -30px;
+}
+
+.gt-wrapper h3 {
+	border-bottom: #ccc thin solid;
+	padding-bottom: 10px;
+	width: 100%;
+	float: left;
+}
+
+.gt-wrapper .gt-looping_image-small {
+	position: relative;
+	width: 100px;
+	border: #ccc thin solid;
+	float: left;
+	margin: 0px 10px 5px 0px;
+	clear: left;
+}
+
+.gt-wrapper ul li {
+	position: relative;
+	background: #f1f1f1;
+	border: #ccc thin solid;
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 15px;
+	float: left;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.gt-wrapper ul li p { margin: 0px; padding: 0px; }
+.gt-wrapper ul, .gt-wrapper ul li p { clear: left; float: left; }
+
+.gt-delete-button { 
+	position: absolute;
+	background: url('/wp-content/plugins/looping_image/images/delete_icon.png');
+	width: 18px;
+	height: 18px;
+	display: block;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+	z-index: 30;
+}
+
+#gt-loop-notice {
+	position: absolute;
+	background: rgba(255, 254, 235, .8);
+	width: 575px;
+	height: 40px;
+	display: none;
+	padding: 10px;
+	border: #ccc thin solid;
+}
+
+#gt-loop-notice img { float: left; margin-right: 20px; }
+#gt-loop-notice h5 { margin: 0px; padding: 0px; }
+#gt-loop-notice p { margin: 0px; padding: 0px; }
+
+#gt-file-upload-form {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#gt-loop-footer {
+	position: relative;
+	border-top: #ccc thin solid;
+	width: 100%;
+	text-align: right;
+	float: right;
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+#gt-loop-footer a {
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	margin: 0px 10px;
+}
+
+	/* Display None */
+.none { display: none; }
